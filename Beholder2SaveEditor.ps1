@@ -1,4 +1,4 @@
-# Beholder 2 Save Editor (fixed v2)
+# Beholder 2 Save Editor
 # - Lists .data saves in the current folder
 # - Lets you pick a segment with variables
 # - Displays variables and lets you edit one (int/float/bool/string)
@@ -82,11 +82,8 @@ function Update-BinCRC([string]$BinPath,[string]$Hex8){
   $m   = $rx.Matches($txt)
   if ($m.Count -lt 1) { throw "No 8-hex tokens found in $BinPath" }
   $idx = $m[$m.Count-1].Index
-
-  # Overwrite exactly those 8 BYTES only
   $newBytes = $ascii.GetBytes($Hex8)
   for ($i=0; $i -lt 8; $i++) { $bytes[$idx+$i] = $newBytes[$i] }
-
   [IO.File]::WriteAllBytes($BinPath, $bytes)
 }
 
@@ -266,3 +263,4 @@ Write-Host ("Done - Edited {0} : {1} set to {2}. CRC synced in {3}." -f `
     -ForegroundColor Green
 
 Read-Host "Press Enter to exit"
+
