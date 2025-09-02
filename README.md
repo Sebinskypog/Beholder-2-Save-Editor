@@ -6,7 +6,7 @@ It allows you to view and modify in-game variables (like state points) directly 
 
 ---
 
-## ⚙️ How it works
+## How it works
 - Beholder 2 saves have two files: a `.data` (zip with JSON content) and a `.bin` (checksum).  
 - The editor:
   1. Opens the `.data` save,
