@@ -19,7 +19,7 @@ It allows you to view and modify in-game variables (like state points) directly 
 ## Usage
 1. Download `Beholder2SaveEditor.ps1` from this repository.  
 2. Place it in your save folder:  `Documents\Warm Lamp Games\Beholder 2\Saves`
-3. 3. Create a **desktop shortcut**:
+3. Create a **desktop shortcut**:
 - Right-click the script → **Create shortcut**.  
 - Right-click the shortcut → **Properties**.  
 - In **Target**, set:
@@ -31,7 +31,7 @@ It allows you to view and modify in-game variables (like state points) directly 
   C:\Users\<YourName>\Documents\Warm Lamp Games\Beholder 2\Saves
   ```
 
-  !!! Make sure to modify the path accordingly, in `<YourName>` you should add your user. !!!
+  **!!! Make sure to modify the path accordingly, in `<YourName>` you should add your user. !!!**
   
 4. Double-click the shortcut to launch the editor.  
 5. Pick a save file, select a variable, and enter the new value.  
@@ -47,5 +47,4 @@ It allows you to view and modify in-game variables (like state points) directly 
 ---
 
 ## License
-This project is licensed under the **GNU GPL v3**.  
-See the [LICENSE]([LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)) for full details.
+This project is licensed under the **GNU GPL v3**. 
